@@ -1,9 +1,322 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sakshi Singh | Software Engineer</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Inter, Arial, sans-serif;
+            background: #0f172a;
+            color: #e2e8f0;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        nav {
+            position: sticky;
+            top: 0;
+            background: rgba(15,23,42,0.95);
+            backdrop-filter: blur(10px);
+            padding: 20px 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            gap: 30px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #cbd5e1;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        section {
+            padding: 80px 0;
+        }
+
+        h2 {
+            margin-bottom: 25px;
+            color: #38bdf8;
+        }
+
+        .hero {
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            color: #94a3b8;
+            max-width: 700px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            background: #38bdf8;
+            color: #0f172a;
+            font-weight: bold;
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: #1e293b;
+            padding: 25px;
+            border-radius: 12px;
+        }
+
+        .timeline {
+            border-left: 3px solid #38bdf8;
+            padding-left: 25px;
+        }
+
+        .timeline-item {
+            margin-bottom: 30px;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .skill {
+            background: #1e293b;
+            padding: 10px 16px;
+            border-radius: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            border-top: 1px solid #334155;
+        }
+
+        a {
+            color: #38bdf8;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Hello World!</h1>
+
+<nav>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#timeline">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<section class="hero">
+    <div class="container">
+        <h1>Sakshi Singh</h1>
+        <p>
+            Software Engineer specializing in Java, Spring Boot,
+            Distributed Systems, Workflow Automation, and AI-powered
+            engineering tools.
+        </p>
+
+        <a class="btn" href="resume.pdf" target="_blank">
+            Download Resume
+        </a>
+    </div>
+</section>
+
+<section id="about">
+    <div class="container">
+        <h2>About Me</h2>
+
+        <p>
+            I am a Software Engineer with experience building scalable backend
+            systems, workflow orchestration platforms, microservices, and
+            automation solutions. My work focuses on improving reliability,
+            developer productivity, and operational efficiency through modern
+            engineering practices and AI-assisted tooling.
+        </p>
+    </div>
+</section>
+
+<section id="timeline">
+    <div class="container">
+        <h2>Career Timeline</h2>
+
+        <div class="timeline">
+
+            <div class="timeline-item">
+                <h3>Software Engineer</h3>
+                <p><strong>Current Company</strong> | 2024 - Present</p>
+                <p>
+                    Developing backend services, automation workflows,
+                    and AI-assisted testing solutions.
+                </p>
+            </div>
+
+            <div class="timeline-item">
+                <h3>Software Engineer</h3>
+                <p><strong>Previous Role</strong> | 2022 - 2024</p>
+                <p>
+                    Worked on distributed systems, policy management,
+                    and cloud-native services.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="projects">
+    <div class="container">
+
+        <h2>Featured Projects</h2>
+
+        <div class="card-grid">
+
+            <div class="card">
+                <h3>AI Test Generation Platform</h3>
+                <p>
+                    Automated generation and validation of test cases
+                    from product requirements.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Automated Bug Fixing Agent</h3>
+                <p>
+                    Multi-agent workflow that diagnoses failures and
+                    proposes code fixes automatically.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Workflow Orchestration Platform</h3>
+                <p>
+                    Built and maintained Airflow-based workflows
+                    for large-scale data processing.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Microservices Platform</h3>
+                <p>
+                    Developed Spring Boot services supporting
+                    high-volume production traffic.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<section id="skills">
+    <div class="container">
+
+        <h2>Technical Skills</h2>
+
+        <div class="skills">
+            <span class="skill">Java</span>
+            <span class="skill">Spring Boot</span>
+            <span class="skill">Microservices</span>
+            <span class="skill">REST APIs</span>
+            <span class="skill">MongoDB</span>
+            <span class="skill">SQL</span>
+            <span class="skill">Docker</span>
+            <span class="skill">Kubernetes</span>
+            <span class="skill">AWS</span>
+            <span class="skill">Airflow</span>
+            <span class="skill">Git</span>
+            <span class="skill">Maven</span>
+        </div>
+
+    </div>
+</section>
+
+<section id="achievements">
+    <div class="container">
+
+        <h2>Achievements</h2>
+
+        <div class="card-grid">
+
+            <div class="card">
+                <h3>Automation Impact</h3>
+                <p>
+                    Developed tools that reduced manual engineering effort.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Platform Reliability</h3>
+                <p>
+                    Improved system stability and operational efficiency.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>AI Engineering</h3>
+                <p>
+                    Built AI-assisted workflows for testing and debugging.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<section id="contact">
+    <div class="container">
+
+        <h2>Contact</h2>
+
+        <p>Email: your-email@example.com</p>
+        <p>LinkedIn: https://linkedin.com/in/your-profile</p>
+        <p>GitHub: https://github.com/Sakshi2019</p>
+
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Sakshi Singh. All rights reserved.</p>
+</footer>
+
 </body>
 </html>
