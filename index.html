@@ -1,321 +1,408 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sakshi Singh | Software Engineer</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+<title>Sakshi Singh | Software Engineer</title>
 
-        body {
-            font-family: Inter, Arial, sans-serif;
-            background: #0f172a;
-            color: #e2e8f0;
-            line-height: 1.6;
-        }
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-        .container {
-            width: 90%;
-            max-width: 1200px;
-            margin: auto;
-        }
+<style>
 
-        nav {
-            position: sticky;
-            top: 0;
-            background: rgba(15,23,42,0.95);
-            backdrop-filter: blur(10px);
-            padding: 20px 0;
-            z-index: 100;
-        }
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-        nav ul {
-            display: flex;
-            justify-content: center;
-            list-style: none;
-            gap: 30px;
-        }
+body{
+    font-family:'Poppins',sans-serif;
+    background:#fafafc;
+    color:#2d3748;
+}
 
-        nav a {
-            text-decoration: none;
-            color: #cbd5e1;
-        }
+.container{
+    max-width:1200px;
+    margin:auto;
+    padding:0 24px;
+}
 
-        nav a:hover {
-            color: #38bdf8;
-        }
+nav{
+    padding:24px 0;
+    position:sticky;
+    top:0;
+    background:rgba(250,250,252,.95);
+    backdrop-filter:blur(10px);
+    z-index:100;
+}
 
-        section {
-            padding: 80px 0;
-        }
+nav ul{
+    display:flex;
+    justify-content:center;
+    gap:32px;
+    list-style:none;
+}
 
-        h2 {
-            margin-bottom: 25px;
-            color: #38bdf8;
-        }
+nav a{
+    text-decoration:none;
+    color:#4a5568;
+    font-weight:500;
+}
 
-        .hero {
-            min-height: 90vh;
-            display: flex;
-            align-items: center;
-        }
+.hero{
+    min-height:90vh;
+    display:flex;
+    align-items:center;
+}
 
-        .hero h1 {
-            font-size: 4rem;
-            margin-bottom: 15px;
-        }
+.hero-content{
+    max-width:700px;
+}
 
-        .hero p {
-            font-size: 1.3rem;
-            color: #94a3b8;
-            max-width: 700px;
-        }
+.hero-tag{
+    background:#eef2ff;
+    color:#4f46e5;
+    display:inline-block;
+    padding:8px 16px;
+    border-radius:30px;
+    margin-bottom:20px;
+}
 
-        .btn {
-            display: inline-block;
-            margin-top: 25px;
-            padding: 12px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            background: #38bdf8;
-            color: #0f172a;
-            font-weight: bold;
-        }
+.hero h1{
+    font-size:4rem;
+    line-height:1.1;
+    margin-bottom:20px;
+}
 
-        .card-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
-            gap: 20px;
-        }
+.hero h1 span{
+    color:#4f46e5;
+}
 
-        .card {
-            background: #1e293b;
-            padding: 25px;
-            border-radius: 12px;
-        }
+.hero p{
+    font-size:1.2rem;
+    color:#64748b;
+    margin-bottom:30px;
+}
 
-        .timeline {
-            border-left: 3px solid #38bdf8;
-            padding-left: 25px;
-        }
+.btn{
+    display:inline-block;
+    background:#4f46e5;
+    color:white;
+    padding:14px 24px;
+    border-radius:12px;
+    text-decoration:none;
+    margin-right:10px;
+}
 
-        .timeline-item {
-            margin-bottom: 30px;
-        }
+.btn-outline{
+    background:white;
+    color:#4f46e5;
+    border:2px solid #4f46e5;
+}
 
-        .skills {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
-        }
+section{
+    padding:90px 0;
+}
 
-        .skill {
-            background: #1e293b;
-            padding: 10px 16px;
-            border-radius: 20px;
-        }
+.section-title{
+    font-size:2.2rem;
+    margin-bottom:20px;
+}
 
-        footer {
-            text-align: center;
-            padding: 40px;
-            border-top: 1px solid #334155;
-        }
+.section-subtitle{
+    color:#64748b;
+    margin-bottom:50px;
+}
 
-        a {
-            color: #38bdf8;
-        }
-    </style>
+.about-card{
+    background:white;
+    padding:40px;
+    border-radius:24px;
+    box-shadow:0 10px 40px rgba(0,0,0,.05);
+}
+
+.timeline{
+    position:relative;
+    padding-left:30px;
+}
+
+.timeline::before{
+    content:'';
+    position:absolute;
+    left:0;
+    top:0;
+    width:4px;
+    height:100%;
+    background:#c7d2fe;
+}
+
+.timeline-item{
+    position:relative;
+    margin-bottom:40px;
+}
+
+.timeline-item::before{
+    content:'';
+    position:absolute;
+    left:-38px;
+    top:6px;
+    width:16px;
+    height:16px;
+    background:#4f46e5;
+    border-radius:50%;
+}
+
+.card-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:24px;
+}
+
+.card{
+    background:white;
+    border-radius:24px;
+    padding:30px;
+    box-shadow:0 10px 40px rgba(0,0,0,.05);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card-icon{
+    font-size:2rem;
+    margin-bottom:15px;
+}
+
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+}
+
+.skill{
+    background:#eef2ff;
+    color:#4338ca;
+    padding:10px 18px;
+    border-radius:999px;
+    font-weight:500;
+}
+
+.achievement{
+    background:linear-gradient(
+        135deg,
+        #eef2ff,
+        #f5f3ff
+    );
+}
+
+.contact-box{
+    text-align:center;
+    background:white;
+    padding:50px;
+    border-radius:24px;
+    box-shadow:0 10px 40px rgba(0,0,0,.05);
+}
+
+footer{
+    text-align:center;
+    padding:40px;
+    color:#64748b;
+}
+
+</style>
 </head>
 
 <body>
 
 <nav>
-    <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#timeline">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#achievements">Achievements</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#journey">Journey</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
 </nav>
 
 <section class="hero">
-    <div class="container">
-        <h1>Sakshi Singh</h1>
-        <p>
-            Software Engineer specializing in Java, Spring Boot,
-            Distributed Systems, Workflow Automation, and AI-powered
-            engineering tools.
-        </p>
+<div class="container">
 
-        <a class="btn" href="resume.pdf" target="_blank">
-            Download Resume
-        </a>
-    </div>
+<div class="hero-content">
+
+<div class="hero-tag">
+✨ Building reliable systems & smart automation
+</div>
+
+<h1>
+Hi, I'm <span>Sakshi</span>.
+</h1>
+
+<p>
+Software Engineer passionate about backend systems,
+workflow automation, AI-assisted engineering,
+and building products that simplify complex problems.
+</p>
+
+<a href="resume.pdf" class="btn">
+Download Resume
+</a>
+
+<a href="#projects" class="btn btn-outline">
+View Projects
+</a>
+
+</div>
+</div>
 </section>
 
 <section id="about">
-    <div class="container">
-        <h2>About Me</h2>
+<div class="container">
 
-        <p>
-            I am a Software Engineer with experience building scalable backend
-            systems, workflow orchestration platforms, microservices, and
-            automation solutions. My work focuses on improving reliability,
-            developer productivity, and operational efficiency through modern
-            engineering practices and AI-assisted tooling.
-        </p>
-    </div>
+<h2 class="section-title">About Me</h2>
+
+<div class="about-card">
+<p>
+I enjoy designing scalable software, automating repetitive workflows,
+and solving engineering challenges through clean architecture and thoughtful design.
+My experience spans Java, Spring Boot, Airflow, distributed systems,
+cloud-native applications, and AI-powered development workflows.
+</p>
+</div>
+
+</div>
 </section>
 
-<section id="timeline">
-    <div class="container">
-        <h2>Career Timeline</h2>
+<section id="journey">
+<div class="container">
 
-        <div class="timeline">
+<h2 class="section-title">Career Journey</h2>
 
-            <div class="timeline-item">
-                <h3>Software Engineer</h3>
-                <p><strong>Current Company</strong> | 2024 - Present</p>
-                <p>
-                    Developing backend services, automation workflows,
-                    and AI-assisted testing solutions.
-                </p>
-            </div>
+<div class="timeline">
 
-            <div class="timeline-item">
-                <h3>Software Engineer</h3>
-                <p><strong>Previous Role</strong> | 2022 - 2024</p>
-                <p>
-                    Worked on distributed systems, policy management,
-                    and cloud-native services.
-                </p>
-            </div>
+<div class="timeline-item">
+<h3>Software Engineer</h3>
+<p>Current Role</p>
+<p>Building backend services and automation platforms.</p>
+</div>
 
-        </div>
-    </div>
+<div class="timeline-item">
+<h3>Platform & Workflow Engineering</h3>
+<p>Previous Experience</p>
+<p>Designed scalable workflows and distributed systems.</p>
+</div>
+
+<div class="timeline-item">
+<h3>Electrical Engineering Graduate</h3>
+<p>The beginning of the journey.</p>
+</div>
+
+</div>
+</div>
 </section>
 
 <section id="projects">
-    <div class="container">
+<div class="container">
 
-        <h2>Featured Projects</h2>
+<h2 class="section-title">Featured Projects</h2>
 
-        <div class="card-grid">
+<div class="card-grid">
 
-            <div class="card">
-                <h3>AI Test Generation Platform</h3>
-                <p>
-                    Automated generation and validation of test cases
-                    from product requirements.
-                </p>
-            </div>
+<div class="card">
+<div class="card-icon">🤖</div>
+<h3>AI Test Generation Platform</h3>
+<p>Generate and validate test cases automatically from requirements.</p>
+</div>
 
-            <div class="card">
-                <h3>Automated Bug Fixing Agent</h3>
-                <p>
-                    Multi-agent workflow that diagnoses failures and
-                    proposes code fixes automatically.
-                </p>
-            </div>
+<div class="card">
+<div class="card-icon">🔧</div>
+<h3>Automated Bug Fix Agent</h3>
+<p>Diagnose failures and propose fixes using AI workflows.</p>
+</div>
 
-            <div class="card">
-                <h3>Workflow Orchestration Platform</h3>
-                <p>
-                    Built and maintained Airflow-based workflows
-                    for large-scale data processing.
-                </p>
-            </div>
+<div class="card">
+<div class="card-icon">⚙️</div>
+<h3>Workflow Orchestration</h3>
+<p>Large-scale Airflow workflows and operational automation.</p>
+</div>
 
-            <div class="card">
-                <h3>Microservices Platform</h3>
-                <p>
-                    Developed Spring Boot services supporting
-                    high-volume production traffic.
-                </p>
-            </div>
+<div class="card">
+<div class="card-icon">☁️</div>
+<h3>Microservices Platform</h3>
+<p>Cloud-native backend services built with Java and Spring Boot.</p>
+</div>
 
-        </div>
+</div>
 
-    </div>
+</div>
 </section>
 
 <section id="skills">
-    <div class="container">
+<div class="container">
 
-        <h2>Technical Skills</h2>
+<h2 class="section-title">Technical Skills</h2>
 
-        <div class="skills">
-            <span class="skill">Java</span>
-            <span class="skill">Spring Boot</span>
-            <span class="skill">Microservices</span>
-            <span class="skill">REST APIs</span>
-            <span class="skill">MongoDB</span>
-            <span class="skill">SQL</span>
-            <span class="skill">Docker</span>
-            <span class="skill">Kubernetes</span>
-            <span class="skill">AWS</span>
-            <span class="skill">Airflow</span>
-            <span class="skill">Git</span>
-            <span class="skill">Maven</span>
-        </div>
+<div class="skills">
+<span class="skill">Java</span>
+<span class="skill">Spring Boot</span>
+<span class="skill">Microservices</span>
+<span class="skill">MongoDB</span>
+<span class="skill">Docker</span>
+<span class="skill">Kubernetes</span>
+<span class="skill">AWS</span>
+<span class="skill">Airflow</span>
+<span class="skill">Git</span>
+<span class="skill">Maven</span>
+<span class="skill">SQL</span>
+</div>
 
-    </div>
+</div>
 </section>
 
-<section id="achievements">
-    <div class="container">
+<section>
+<div class="container">
 
-        <h2>Achievements</h2>
+<h2 class="section-title">Achievements</h2>
 
-        <div class="card-grid">
+<div class="card-grid">
 
-            <div class="card">
-                <h3>Automation Impact</h3>
-                <p>
-                    Developed tools that reduced manual engineering effort.
-                </p>
-            </div>
+<div class="card achievement">
+🏆 Built AI-driven engineering workflows
+</div>
 
-            <div class="card">
-                <h3>Platform Reliability</h3>
-                <p>
-                    Improved system stability and operational efficiency.
-                </p>
-            </div>
+<div class="card achievement">
+🚀 Improved automation and developer productivity
+</div>
 
-            <div class="card">
-                <h3>AI Engineering</h3>
-                <p>
-                    Built AI-assisted workflows for testing and debugging.
-                </p>
-            </div>
+<div class="card achievement">
+📈 Delivered scalable backend systems
+</div>
 
-        </div>
+</div>
 
-    </div>
+</div>
 </section>
 
 <section id="contact">
-    <div class="container">
+<div class="container">
 
-        <h2>Contact</h2>
+<div class="contact-box">
 
-        <p>Email: your-email@example.com</p>
-        <p>LinkedIn: https://linkedin.com/in/your-profile</p>
-        <p>GitHub: https://github.com/Sakshi2019</p>
+<h2>Let's Connect</h2>
 
-    </div>
+<p>Email: your-email@example.com</p>
+<p>LinkedIn: linkedin.com/in/your-profile</p>
+<p>GitHub: github.com/Sakshi2019</p>
+
+</div>
+
+</div>
 </section>
 
 <footer>
-    <p>© 2026 Sakshi Singh. All rights reserved.</p>
+Made with ❤️ by Sakshi Singh
 </footer>
 
 </body>
